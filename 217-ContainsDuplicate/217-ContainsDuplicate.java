@@ -1,4 +1,4 @@
-// Last updated: 6/9/2026, 2:41:40 PM
+// Last updated: 6/9/2026, 2:41:58 PM
 1class Solution {
 2    public boolean containsDuplicate(int[] nums) {
 3        Arrays.sort(nums);

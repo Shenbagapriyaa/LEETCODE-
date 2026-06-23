@@ -1,8 +1,8 @@
-// Last updated: 6/23/2026, 3:59:32 PM
+// Last updated: 6/23/2026, 4:05:01 PM
 1class Solution {
 2    public void sortColors(int[] nums) {
-3       for(int i=0;i<nums.length-1;i++){
-4        for(int j=0;j<nums.length-i-1;j++){
+3       for(int i=0;i<nums.length;i++){
+4        for(int j=0;j<nums.length-1;j++){
 5            if(nums[j]>nums[j+1])    {
 6                int temp=nums[j];
 7                nums[j]=nums[j+1];

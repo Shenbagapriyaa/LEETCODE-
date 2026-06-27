@@ -1,12 +1,15 @@
-# Last updated: 6/27/2026, 10:21:30 AM
+# Last updated: 6/27/2026, 12:08:39 PM
 1class Solution:
-2    def intToRoman(self, num: int) -> str:
-3        sym=["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
-4        value=[1000,900,500,400,100,90,50,40,10,9,5,4,1]
-5        ans=""
-6        for i in range(len(sym)):
-7            while num>=value[i]:
-8                ans=ans+sym[i]
-9                num=num-value[i]
-10        return ans
-11        
+2    def maxProduct(self, nums: List[int]) -> int:
+3        n=len(nums)
+4        m=nums[0]
+5        for i in range(n):
+6            p=1
+7            for j in range (i,n):
+8                p*=nums[j]
+9                if p>m:
+10                    m=p;
+11        return m;
+12        
+13        
+14        

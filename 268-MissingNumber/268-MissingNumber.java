@@ -1,4 +1,4 @@
-// Last updated: 7/1/2026, 1:50:00 PM
+// Last updated: 7/1/2026, 1:59:40 PM
 1class Solution {
 2    public int climbStairs(int n) {
 3        if(n<=0){

@@ -1,23 +1,18 @@
-// Last updated: 6/25/2026, 3:54:13 PM
+// Last updated: 7/2/2026, 5:36:22 PM
 1class Solution {
-2    public int maxArea(int[] height) {
-3        int l = 0;
-4        int r = height.length - 1;
-5        int maxArea = 0;
-6        while(l<r){
-7            int w=r-l;
-8            int h=Math.min(height[l],height[r]);
-9            int area=w*h;
-10            if(area>maxArea){
-11                maxArea=area;
-12            }
-13            if(height[l]<height[r]){
-14                l++;
-15            }
-16            else{
-17                r--;
-18            }
-19        }
-20        return maxArea;
-21    }
-22}
+2    public int majorityElement(int[] nums) {
+3        int n=nums.length;
+4        for(int i=0;i<n;i++){
+5           int c=0;
+6           for(int j=0;j<n;j++){
+7            if(nums[i]==nums[j]){
+8                c++;
+9            }
+10           }
+11            if(c>n/2){
+12               return nums[i];
+13            }
+14           }
+15           return -1;
+16    }
+17}

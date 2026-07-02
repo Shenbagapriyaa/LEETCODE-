@@ -1,4 +1,4 @@
-# Last updated: 7/2/2026, 4:20:36 PM
+# Last updated: 7/2/2026, 4:21:26 PM
 1class Solution:
 2    def lengthOfLastWord(self, s: str) -> int:
 3        s=s.split()
